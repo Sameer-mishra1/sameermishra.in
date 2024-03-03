@@ -1,9 +1,10 @@
 import Sameer from "../assets/Sameer.png"
+import { Handles } from "../components/Handles"
 
 export const Home = () => {
     return <div className="bg-neutral-800 h-screen flex flex-col">
         {/* Menu */}
-        <div className="p-6 ml-2">
+        <div className="p-6 ml-2 fixed">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="white" className="w-6 h-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
             </svg>
@@ -27,8 +28,8 @@ export const Home = () => {
             <h6>A PASSIONATE FULL-STACK DEVELOPER & AN ASPIRING ENTREPRENEUR</h6>
         </div>
         {/* Social Media Icons */}
-        <div className="bg-red-300 w-full h-screen mt-5">
-        
+        <div className="mt-5 flex items-center justify-center space-x-3">
+            <Handles />
         </div>
         </div>
         
