@@ -7,11 +7,21 @@ export const Menu = () => {
     setIsOpen((isOpen) => !isOpen);
   };
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      section.scrollIntoView({behavior: "smooth"});
+      setIsOpen(false);
+    }
+  }
+
+
   return (
     <>
       <div>
         {/* Hamburger icon */}
-        <div className="fixed m-5">
+        <div className="fixed m-5 z-50">
           {!isOpen && (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -50,28 +60,28 @@ export const Menu = () => {
 
         {/* X icon */}
         {isOpen && (
-          <div className="fixed inset-0 bg-black bg-opacity-80 z-50"></div>
+          <div className="fixed inset-0 bg-black bg-opacity-40 z-50 h-screen"></div>
         )}
         {/* Menu */}
         <div
-          className={`fixed inset-0 z-50 flex justify-center items-center ${
+          className={`fixed inset-0 z-50 flex justify-center items-center backdrop-blur-xl ${
             isOpen ? "" : "hidden"
           }`}
         >
           <div className="rounded-lg p-8 text-white text-center w-4/5 max-w-sm">
-            <ul className="flex flex-col items-center justify-center h-3/5">
-              <li className="py-4">Home</li>
-              <li className="py-4">About Me</li>
-              <li className="py-4">Contact</li>
-              <li className="py-4">Blogs</li>
-              <li className="py-4">Downloads</li>
+            <ul className="flex flex-col items-center justify-center h-3/5 text-2xl font-['Poppins']">
+              <li className="py-5" onClick={() => scrollToSection("home")}>Home</li>
+              <li className="py-5" onClick={() => scrollToSection("aboutMe")}>About Me</li>
+              <li className="py-5" onClick={() => scrollToSection("contact")}>Contact</li>
+              <li className="py-5" onClick={() => scrollToSection("blogs")}>Blogs</li>
+              <li className="py-5" onClick={() => scrollToSection("downloads")}>Downloads</li>
             </ul>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              className="w-6 h-6 absolute top-4 left-4 cursor-pointer"
+              className="w-8 h-8 absolute top-4 left-4 cursor-pointer"
               onClick={toggleMenu}
             >
               <path
