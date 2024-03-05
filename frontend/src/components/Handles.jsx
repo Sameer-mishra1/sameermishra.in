@@ -63,7 +63,7 @@ export const Handles = () => {
 {/* Instagram */}
 <div>
 <a href="https://www.instagram.com/sameer_mishraa/">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43.634" height="44.629" viewBox="0 0 43.634 44.629">
+<svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="43.634" height="44.629" viewBox="0 0 43.634 44.629">
   <defs>
     <filter id="Icon_awesome-instagram" x="0" y="0" width="43.634" height="44.629" filterUnits="userSpaceOnUse">
       <feOffset dx="6" dy="10" input="SourceAlpha"/>
