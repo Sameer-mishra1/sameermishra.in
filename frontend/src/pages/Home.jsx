@@ -78,6 +78,8 @@ export const Home = () => {
       <div id="aboutMe" className="h-screen bg-neutral-800">
         <div className="text-white text-2xl flex justify-center pt-8">
           About Me
+          <div>
+          </div>
         </div>
       </div>
       <div id="contact" className="h-screen bg-neutral-800">
