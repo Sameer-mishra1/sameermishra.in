@@ -31,7 +31,8 @@ export const Home = () => {
             <Handles />
           </div>
           {/* Scroll Icon */}
-          <div className="flex justify-center mt-2">
+          <div className="flex justify-center mt-8">
+          <a href="#aboutMe">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -68,6 +69,7 @@ export const Home = () => {
                 />
               </g>
             </svg>
+          </a>
           </div>
         </div>
       </div>
