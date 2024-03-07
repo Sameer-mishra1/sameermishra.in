@@ -103,6 +103,9 @@ export const Menu = () => {
             </svg>
           </div>
           {/* Add Handles in Menu */}
+          {isOpen && <div className="flex items-center space-x-4">
+            <Handles />
+          </div>}
         </div>
       </div>
     </>
