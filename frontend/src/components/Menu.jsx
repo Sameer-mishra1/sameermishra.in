@@ -42,7 +42,7 @@ export const Menu = () => {
                   transform="translate(24.5 31.5)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="3"
+                  strokeWidth="3"
                 />
                 <line
                   id="Line_2"
@@ -51,7 +51,7 @@ export const Menu = () => {
                   transform="translate(24.5 40.5)"
                   fill="none"
                   stroke="#fff"
-                  stroke-width="3"
+                  strokeWidth="3"
                 />
               </g>
             </svg>
@@ -75,6 +75,9 @@ export const Menu = () => {
               </li>
               <li className="py-5" onClick={() => scrollToSection("aboutMe")}>
                 About Me
+              </li>
+              <li className="py-5" onClick={() => scrollToSection("projects")}>
+                Projects
               </li>
               <li className="py-5" onClick={() => scrollToSection("contact")}>
                 Contact
@@ -103,6 +106,9 @@ export const Menu = () => {
             </svg>
           </div>
           {/* Add Handles in Menu */}
+          {isOpen && <div className="flex items-center space-x-4">
+            <Handles />
+          </div>}
         </div>
       </div>
     </>
