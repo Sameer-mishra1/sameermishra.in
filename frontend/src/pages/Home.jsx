@@ -85,10 +85,10 @@ export const Home = () => {
         <div className="text-white text-2xl flex justify-center pt-8">
           About Me
         </div>
-        <div className="flex justify-center pt-16">
+        <div className="flex justify-center pt-12">
           <img src={aboutMe} className="w-48 h-48 drop-shadow-2xl" />
         </div>
-        <div className="pt-8">
+        <div className="pt-4">
           <p className="m-5 text-white">
             Hi, I love the fact that such tools and technologies exist which
             help us in turning our imagination into a reality! <br /> <br />
@@ -96,7 +96,7 @@ export const Home = () => {
             am truly fascinated by the power that technology and innovation
             holds and so I love to explore its endless possibilities. <br />{" "}
             <br />
-            While I was in college, I got to work wuth (& launch) multiple
+            While I was in college, I got to work with (& launch) multiple
             startups. That's how I started gravitating towards Software &
             Web-Development. Thus, I have multi-disciplinary skills and varied
             interests.
@@ -105,6 +105,9 @@ export const Home = () => {
           <p className="m-5 text-white">
             I love reading about new technologies, philosophy, startups &
             entrepreneurship!
+          </p>
+          <p className="m-5 text-white">
+            If you are working on some cool idea or project, <br /> I would love to get on a call with you & see where it goes!
           </p>
         </div>
       </div>
