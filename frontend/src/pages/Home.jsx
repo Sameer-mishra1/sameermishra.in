@@ -3,6 +3,7 @@ import { Handles } from "../components/Handles";
 import { Menu } from "../components/Menu";
 import aboutMe from "../assets/AboutMe.svg";
 import { ToolsAndTech } from "./Tools-and-Tech/ToolsAndTech";
+import { Projects } from "./Projects/Projects";
 
 export const Home = () => {
   return (
@@ -114,11 +115,7 @@ export const Home = () => {
       </div>
 
       {/* Projects */}
-      <div id="projects" className="h-screen bg-neutral-800">
-        <div className="text-white text-2xl flex justify-center pt-8">
-          Projects
-        </div>
-      </div>
+      <Projects />
 
       {/* Tools / Skills and Technologies */}
       <ToolsAndTech />
