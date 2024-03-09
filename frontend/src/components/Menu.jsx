@@ -79,8 +79,8 @@ export const Menu = () => {
               <li className="py-5" onClick={() => scrollToSection("projects")}>
                 Projects
               </li>
-              <li className="py-5" onClick={() => scrollToSection("contact")}>
-                Contact
+              <li className="py-5" onClick={() => scrollToSection("toolsAndTech")}>
+                Skills & Tools
               </li>
               <li className="py-5" onClick={() => scrollToSection("blogs")}>
                 Blogs
