@@ -9,7 +9,6 @@ export const ToolsAndTech = () => {
         </div>
         <div className="mt-8">
           <table className="flex justify-center m-5 text-white">
-            <thead></thead>
             <tbody>
               {tableData.map((rowData, rowIndex) => (
                 <tr key={rowIndex}>
