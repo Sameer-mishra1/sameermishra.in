@@ -2,6 +2,7 @@ import Sameer from "../assets/Sameer.png";
 import { Handles } from "../components/Handles";
 import { Menu } from "../components/Menu";
 import aboutMe from "../assets/AboutMe.svg";
+import { ToolsAndTech } from "./Tools-and-Tech/ToolsAndTech";
 
 export const Home = () => {
   return (
@@ -118,16 +119,25 @@ export const Home = () => {
           Projects
         </div>
       </div>
+
+      {/* Tools / Skills and Technologies */}
+      <ToolsAndTech />
+
+      {/* Contact */}
       <div id="contact" className="h-screen bg-neutral-800">
         <div className="text-white text-2xl flex justify-center pt-8">
           Contact
         </div>
       </div>
+
+      {/* Blogs */}
       <div id="blogs" className="h-screen bg-neutral-800">
         <div className="text-white text-2xl flex justify-center pt-8">
           Blogs
         </div>
       </div>
+
+      {/* Downloads */}
       <div id="downloads" className="h-screen bg-neutral-800">
         <div className="text-white text-2xl flex justify-center pt-8">
           Downloads
