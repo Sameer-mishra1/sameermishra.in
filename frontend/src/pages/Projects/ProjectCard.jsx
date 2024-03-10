@@ -6,7 +6,7 @@ export const ProjectCard = (props) => {
 
   return (
     <>
-      <div className="flex flex-col justify-center m-8 p-5 bg-neutral-600 items-center rounded-xl text-white">
+      <div className="flex flex-col justify-center m-8 p-5 bg-neutral-600 items-center rounded-xl text-white md:w-96 drop-shadow-2xl">
         <img src={props.image} className="rounded-2xl shadow-md m-2" />
         <h3 className="font-['Poppins'] m-2 text-2xl">{props.title}</h3>
         <p className="text-center">{props.description}</p>
