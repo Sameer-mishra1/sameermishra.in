@@ -3,7 +3,7 @@ export const Handles = () => {
     <>
       {/* Linkedin */}
       <div>
-        <a href="https://www.linkedin.com/in/sameer-/">
+        <a target="_blank" href="https://www.linkedin.com/in/sameer-/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -45,7 +45,7 @@ export const Handles = () => {
 
       {/* GitHub */}
       <div>
-        <a href="https://github.com/Sameer-mishra1">
+        <a target="_blank" href="https://github.com/Sameer-mishra1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -129,7 +129,7 @@ export const Handles = () => {
 
       {/* Instagram */}
       <div>
-        <a href="https://www.instagram.com/sameer_mishraa/">
+        <a target="_blank" href="https://www.instagram.com/sameer_mishraa/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
