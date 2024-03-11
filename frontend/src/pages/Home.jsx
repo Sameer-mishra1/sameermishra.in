@@ -8,12 +8,12 @@ import { Projects } from "./Projects/Projects";
 export const Home = () => {
   return (
     <>
-      <div id="home" className={`bg-neutral-800 h-screen flex flex-col`}>
+      <div id="home" className={`bg-neutral-800 h-screen flex flex-col sm:flex-row`}>
         {/* Menu */}
         <Menu />
         {/* Photo */}
         <div className="p-9">
-          <img src={Sameer} className="drop-shadow-2xl" />
+          <img src={Sameer} className="drop-shadow-2xl md:w-96" />
         </div>
         <div className="flex flex-col justify-center w-full">
           {/* Name */}

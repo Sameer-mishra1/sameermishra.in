@@ -1,8 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Handles } from "./Handles";
 
 export const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768)
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    }
+  }, [])
 
   const toggleMenu = () => {
     setIsOpen((isOpen) => !isOpen);
@@ -21,7 +32,7 @@ export const Menu = () => {
     <>
       <div>
         {/* Hamburger icon */}
-        <div className="fixed m-5 z-50">
+        <div className="fixed m-5 z-50 cursor-pointer">
           {!isOpen && (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +80,7 @@ export const Menu = () => {
           }`}
         >
           <div className="rounded-lg p-8 text-white text-center w-4/5 max-w-sm flex justify-center">
-            <ul className="flex flex-col items-center justify-center h-3/5 text-2xl font-['Poppins']">
+            <ul className="flex flex-col items-center justify-center h-3/5 text-2xl font-['Poppins'] cursor-pointer">
               <li className="py-5" onClick={() => scrollToSection("home")}>
                 Home
               </li>
