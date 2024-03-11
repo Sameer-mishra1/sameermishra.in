@@ -6,6 +6,17 @@ export const ToolsAndTech = () => {
 
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768)
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    }
+  }, [])
+
   return (
     <>
       <div id="toolsAndTech" className="h-screen bg-neutral-800 flex flex-col">
